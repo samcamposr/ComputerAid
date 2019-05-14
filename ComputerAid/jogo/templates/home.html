@@ -1,11 +1,21 @@
-{% extends 'base.html' %}
+{% load staticfiles %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-{% block content %}
-<div class="post">
-    <div class="date">
-        <h1>Home</h1>
+<header id="header2">
+    <div class="box"></div>
+    <img src="{% static "img/home.png" %}" class="" alt="">
+    <a href="{% url 'jogo:nome' %}"><button class="btn btn-light action">Jogar</button></a> 
+</header>
+
+<!-- Footer -->
+<footer class="text-center page-footer font-small blue">
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">
+        © 2018 Copyright | Trabalho Final PDSI II
+        <!-- <a href=""> Trabalho Final PDSI II</a> -->
     </div>
-    <h1><a href="{% url 'jogo:nome' %}">Proximo</a></h1>
-
-</div>
-{% endblock %}
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
+    
