@@ -47,3 +47,28 @@ footer{
 	background-color: #00A859;
 	color: white
 }
+
+#body-home{
+	background-image: url('../img/home2.png')
+}
+
+#login{
+	margin-top: -13%;
+}
+
+#sendlogin{
+	width:100%;
+	border-color: #00A859;
+	background-color: #00A859;
+}
+
+#img-card{
+	margin-left: 50px;
+	margin-top: 10px;
+	width: 200px;
+	height: 72px;
+}
+
+.card{
+	height: 40%;
+}

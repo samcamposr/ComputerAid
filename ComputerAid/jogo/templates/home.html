@@ -2,20 +2,38 @@
 <link rel="stylesheet" href="{% static 'css/style.css' %}">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!-- 
 <header id="header2">
     <div class="box"></div>
     <img src="{% static "img/home.png" %}" class="" alt="">
     <a href="{% url 'jogo:nome' %}"><button class="btn btn-light action">Jogar</button></a> 
-</header>
-
-<!-- Footer -->
-<footer class="text-center page-footer font-small blue">
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">
-        © 2018 Copyright | Trabalho Final PDSI II
-        <!-- <a href=""> Trabalho Final PDSI II</a> -->
+</header> -->
+<body id="body-home">
+    <div id="login" class="container">
+        <div class="row justify-content-center align-items-center" style="height:100vh">
+            <div class="col-4">
+                <div class="card">
+                    <!-- <img id="img-card" class="card-img-top" src="{% static "img/logo2.png" %}" alt="Imagem de capa do card"> -->
+                    <div class="card-body">
+                        <form action="POST" autocomplete="off">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="username" placeholder="Nick">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" name="password" placeholder="Senha">
+                            </div>
+                            <button type="button" id="sendlogin" class="btn btn-primary">Jogar</button>
+                        </form>
+                    </div>
+                    <p class="text-center" >Não possui uma conta? <a href="">Clique aqui</a> </p>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- Copyright -->
-</footer>
-<!-- Footer -->
+
+</body>
+
     
