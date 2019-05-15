@@ -2,6 +2,7 @@
 *~
 __pycache__
 myvenv
+myenv
 venv2
 /.vscode
 db.sqlite3
