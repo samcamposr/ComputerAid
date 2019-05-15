@@ -3,6 +3,9 @@ from .models import Aluno
 
 def home(request):
     return render(request, 'home.html', {})
+
+def cadastro(request):
+    return render(request, 'cadastro.html', {})
     
 def nome(request):
     return render(request, 'nome.html', {})

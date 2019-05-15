@@ -1,6 +1,44 @@
+
 {% extends 'base.html' %}
 
+{% load staticfiles %}
+
 {% block content %}
-<h1>arena</h1>
+<h1>Arena</h1>
+  <div class="album py-12">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <a href="">
+          <img class="zoom card-img-top" src= "{% static "img/escola1.png" %}" alt="Card image cap">
+          </a>
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <a href="">
+          <img class="zoom card-img-top" src= "{% static "img/escola2.png" %}" alt="Card image cap">
+          </a>
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center">
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <a href="">
+          <img class="zoom card-img-top" src= "{% static "img/escola3.png" %}" alt="Card image cap">
+          </a>
+          <div class="card-body">
+            <div class="d-flex justify-content-between align-items-center">
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 <h1><a href="{% url 'jogo:ano' %}">Proximo</a></h1>
 {% endblock %}
