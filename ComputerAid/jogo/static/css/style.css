@@ -154,8 +154,6 @@ progress {
 .zoom {
 	padding: 50px;
 	transition: transform .2s;
-	/*width: 200px;
-	height: 200px;*/
 	margin: 0 auto;
 }
   
@@ -165,7 +163,23 @@ progress {
 	transform: scale(1.5); 
 }
 
+.zoom2 {
+	max-width: 70%; max-height: 70%;
+	padding: 50px;
+	transition: transform .2s;
+	margin: 0 auto;
+}
+.zoom2:hover {
+	-ms-transform: scale(1.2); /* IE 9 */
+	-webkit-transform: scale(1.2); /* Safari 3-8 */
+	transform: scale(1.2); 
+}
 
+#btn{
+	bottom:-5px;
+	position: relative;
+	margin: 3px;
+	left: 70px;
 
-
+}
 

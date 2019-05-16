@@ -2,8 +2,8 @@
 
 {% block content %}
 <progress value="75" max="100"></progress>
-<h1>ano</h1>
-<h1><a href="{% url 'jogo:arena' %}">Voltar</a></h1>
-<h1><a href="{% url 'jogo:principal' %}">Proximo</a></h1>
+<h1>Ano</h1>
+<a id="btn" href="{% url 'jogo:arena' %}" class="btn btn-success active" role="button" aria-pressed="true">Voltar</a> 
+<a id="btn" href="{% url 'jogo:principal' %}" class="btn btn-success active" role="button" aria-pressed="true">Proximo</a>
 
 {% endblock %}
