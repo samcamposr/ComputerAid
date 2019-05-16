@@ -1,12 +1,11 @@
-
 {% extends 'base.html' %}
 
 {% load staticfiles %}
 
 {% block content %}
-<h1>Arena</h1>
   <div class="album py-12">
     <progress value="50" max="100"></progress>
+    <h1>Arena</h1>
     <div class="container">
       <div class="row">
         <div class="col-md-4">
@@ -40,6 +39,6 @@
     </div>
   </div>
 
-
+<h1><a href="{% url 'jogo:nome' %}">Anterior</a></h1>
 <h1><a href="{% url 'jogo:ano' %}">Proximo</a></h1>
 {% endblock %}
