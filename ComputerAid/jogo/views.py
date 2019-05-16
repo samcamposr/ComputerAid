@@ -7,7 +7,7 @@ def home(request):
 def login(request):
     print("as")
     return render(request, 'principal.html', {})
-
+    
 def nome(request):
     return render(request, 'nome.html', {})
 
