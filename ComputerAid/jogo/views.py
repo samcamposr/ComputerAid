@@ -5,6 +5,7 @@ def home(request):
     return render(request, 'home.html', {})
 
 def login(request):
+    print("as")
     return render(request, 'principal.html', {})
 
 def nome(request):
