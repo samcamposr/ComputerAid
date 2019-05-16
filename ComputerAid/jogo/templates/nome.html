@@ -2,7 +2,9 @@
 
 {% block content %}
 <progress value="25" max="100"></progress>
-    <form>
+    <form action="{% url 'jogo:Cadnome' %}" method="POST">
+        {% csrf_token %}
+
         <div class="form-group">
             <label for="nome">Nome:</label>
             <input type="text" class="form-control" id="nome" name="nome" aria-describedby="nomeHelp" placeholder="Seu Nome">
