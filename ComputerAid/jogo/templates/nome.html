@@ -3,5 +3,7 @@
 {% block content %}
 <progress value="25" max="100"></progress>
 <h1>Nome</h1>
+<h1><a href="{% url 'jogo:home' %}">Voltar</a></h1>
 <h1><a href="{% url 'jogo:arena' %}">Proximo</a></h1>
+
 {% endblock %}
